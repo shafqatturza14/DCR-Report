@@ -1,0 +1,2392 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-GB",
+    "dataSources": [
+      {
+        "name": "SqlServer 192.168.8.239 IrisNetSD_HPL",
+        "connectionString": "Provider=SQLNCLI11;Data Source=192.168.8.239;Initial Catalog=IrisNetSD_HPL;User ID=turza;Persist Security Info=false",
+        "impersonationMode": "impersonateServiceAccount",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      },
+      {
+        "name": "SqlServer 192.168.8.239 HPL_PPM",
+        "connectionString": "Provider=SQLNCLI11;Data Source=192.168.8.239;Initial Catalog=HPL_PPM;User ID=turza;Persist Security Info=true",
+        "impersonationMode": "impersonateServiceAccount",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      },
+      {
+        "name": "SqlServer 192.168.8.239 IrisNetSD_HPL 2",
+        "connectionString": "Provider=SQLNCLI11;Data Source=192.168.8.239;Initial Catalog=IrisNetSD_HPL;User ID=sa;Persist Security Info=false",
+        "impersonationMode": "impersonateServiceAccount",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "PBI_Market_master_t",
+        "columns": [
+          {
+            "name": "NationalCode",
+            "dataType": "string",
+            "sourceColumn": "NationalCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "ZoneCode",
+            "dataType": "string",
+            "sourceColumn": "ZoneCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "RegeionCode",
+            "dataType": "string",
+            "sourceColumn": "RegeionCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "MarketId",
+            "dataType": "int64",
+            "sourceColumn": "MarketId",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "MarketCode",
+            "dataType": "string",
+            "sourceColumn": "MarketCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Market",
+            "dataType": "string",
+            "sourceColumn": "Market",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "EmployeeId",
+            "dataType": "int64",
+            "sourceColumn": "EmployeeId",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "EmployeeCode",
+            "dataType": "string",
+            "sourceColumn": "EmployeeCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "SAPEmpCode",
+            "dataType": "string",
+            "sourceColumn": "SAPEmpCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "FullName",
+            "dataType": "string",
+            "sourceColumn": "FullName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "FatherName",
+            "dataType": "string",
+            "sourceColumn": "FatherName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "DesignationCode",
+            "dataType": "string",
+            "sourceColumn": "DesignationCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "JoiningDate",
+            "dataType": "dateTime",
+            "sourceColumn": "JoiningDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "ConfirmedDate",
+            "dataType": "dateTime",
+            "sourceColumn": "ConfirmedDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "MarketJoiningDate",
+            "dataType": "dateTime",
+            "sourceColumn": "MarketJoiningDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "PromotionDate",
+            "dataType": "dateTime",
+            "sourceColumn": "PromotionDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "CellPhone",
+            "dataType": "string",
+            "sourceColumn": "CellPhone",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "BloodGroup",
+            "dataType": "string",
+            "sourceColumn": "BloodGroup",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Sorting",
+            "dataType": "string",
+            "sourceColumn": "Sorting",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "SAPMarketCode",
+            "dataType": "string",
+            "sourceColumn": "SAPMarketCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "SAPDepotCode",
+            "dataType": "string",
+            "sourceColumn": "SAPDepotCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Creator",
+            "dataType": "string",
+            "sourceColumn": "Creator",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "CcreationDate",
+            "dataType": "dateTime",
+            "sourceColumn": "CcreationDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "NatonalName",
+            "dataType": "string",
+            "sourceColumn": "NatonalName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "ZoneName",
+            "dataType": "string",
+            "sourceColumn": "ZoneName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "RegeionName",
+            "dataType": "string",
+            "sourceColumn": "RegeionName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "MarketName",
+            "dataType": "string",
+            "sourceColumn": "MarketName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Email",
+            "dataType": "string",
+            "sourceColumn": "Email",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "BatchNo",
+            "dataType": "string",
+            "sourceColumn": "BatchNo",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "DivisionCode",
+            "dataType": "string",
+            "sourceColumn": "DivisionCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "DivisionName",
+            "dataType": "string",
+            "sourceColumn": "DivisionName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "OwnerEmpName",
+            "dataType": "string",
+            "sourceColumn": "OwnerEmpName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Business_Type",
+            "dataType": "string",
+            "sourceColumn": "Business_Type",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "MarketTeam",
+            "dataType": "string",
+            "sourceColumn": "MarketTeam"
+          },
+          {
+            "type": "calculated",
+            "name": "Market_team",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "IF([MarketTeam]=\"Team-A\",\"Aviator\",IF([MarketTeam]=\"Team-B\",\"Venture\",IF([MarketTeam]=\"Team-AB\",\"Luminous\")))"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "PBI_Market_master_t",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[PBI_Market_master_t].* FROM [dbo].[PBI_Market_master_t] ",
+              "dataSource": "SqlServer 192.168.8.239 IrisNetSD_HPL"
+            },
+            "annotations": [
+              {
+                "name": "TableWidgetSerialization",
+                "value": [
+                  "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"TableWidgetSerialization\"><AnnotationContent><![CDATA[<?xml version=\"1.0\"?>",
+                  "<TableWidgetGridSerialization xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">",
+                  "  <ColumnSuggestedType />",
+                  "  <ColumnFormat />",
+                  "  <ColumnAccuracy />",
+                  "  <ColumnCurrencySymbol />",
+                  "  <ColumnPositivePattern />",
+                  "  <ColumnNegativePattern />",
+                  "  <ColumnWidths>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>NationalCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>115</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>ZoneCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>98</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>RegeionCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>116</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>MarketId</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>88</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>MarketCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>108</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>Market</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>76</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>EmployeeId</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>107</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>EmployeeCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>127</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>SAPEmpCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>119</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>FullName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>89</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>FatherName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>109</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>DesignationCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>138</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>JoiningDate</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>106</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>ConfirmedDate</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>127</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>MarketJoiningDate</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>147</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>PromotionDate</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>128</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CellPhone</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>94</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>BloodGroup</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>107</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>Sorting</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>79</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>SAPMarketCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>132</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>SAPDepotCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>129</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>Creator</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>81</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CcreationDate</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>122</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>NatonalName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>116</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>ZoneName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>101</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>RegeionName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>119</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>MarketName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>111</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>Email</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>66</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>BatchNo</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>87</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>DivisionCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>113</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>DivisionName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>116</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>OwnerEmpName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>138</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>Business_Type</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>125</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>MarketTeam</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>110</int>",
+                  "      </value>",
+                  "    </item>",
+                  "  </ColumnWidths>",
+                  "  <ColumnDisplayIndex>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>NationalCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>0</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>ZoneCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>1</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>RegeionCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>2</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>MarketId</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>3</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>MarketCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>4</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>Market</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>5</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>EmployeeId</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>6</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>EmployeeCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>7</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>SAPEmpCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>8</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>FullName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>9</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>FatherName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>10</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>DesignationCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>11</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>JoiningDate</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>12</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>ConfirmedDate</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>13</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>MarketJoiningDate</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>14</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>PromotionDate</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>15</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CellPhone</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>16</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>BloodGroup</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>17</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>Sorting</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>18</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>SAPMarketCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>19</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>SAPDepotCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>20</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>Creator</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>21</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>CcreationDate</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>22</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>NatonalName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>23</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>ZoneName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>24</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>RegeionName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>25</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>MarketName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>26</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>Email</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>27</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>BatchNo</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>28</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>DivisionCode</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>29</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>DivisionName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>30</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>OwnerEmpName</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>31</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>Business_Type</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>32</int>",
+                  "      </value>",
+                  "    </item>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>MarketTeam</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <int>33</int>",
+                  "      </value>",
+                  "    </item>",
+                  "  </ColumnDisplayIndex>",
+                  "  <ColumnFrozen />",
+                  "  <ColumnChecked>",
+                  "    <item>",
+                  "      <key>",
+                  "        <string>MarketTeam</string>",
+                  "      </key>",
+                  "      <value>",
+                  "        <boolean>true</boolean>",
+                  "      </value>",
+                  "    </item>",
+                  "  </ColumnChecked>",
+                  "  <ColumnFilter />",
+                  "  <SelectionFilter />",
+                  "  <FilterParameters />",
+                  "  <IsSortDescending>false</IsSortDescending>",
+                  "</TableWidgetGridSerialization>]]></AnnotationContent></Gemini>"
+                ]
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[PBI_Market_master_t].* FROM [dbo].[PBI_Market_master_t] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "PBI_Market_master_t"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          },
+          {
+            "name": "TableWidgetSerialization",
+            "value": [
+              "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"TableWidgetSerialization\"><AnnotationContent><![CDATA[<?xml version=\"1.0\"?>",
+              "<TableWidgetGridSerialization xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">",
+              "  <ColumnSuggestedType />",
+              "  <ColumnFormat />",
+              "  <ColumnAccuracy />",
+              "  <ColumnCurrencySymbol />",
+              "  <ColumnPositivePattern />",
+              "  <ColumnNegativePattern />",
+              "  <ColumnWidths>",
+              "    <item>",
+              "      <key>",
+              "        <string>NationalCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>115</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>ZoneCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>98</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>RegeionCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>116</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>MarketId</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>88</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>MarketCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>108</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>Market</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>76</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>EmployeeId</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>107</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>EmployeeCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>127</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>SAPEmpCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>119</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>FullName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>89</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>FatherName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>109</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>DesignationCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>138</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>JoiningDate</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>106</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>ConfirmedDate</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>127</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>MarketJoiningDate</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>147</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>PromotionDate</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>128</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CellPhone</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>94</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>BloodGroup</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>107</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>Sorting</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>79</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>SAPMarketCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>132</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>SAPDepotCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>129</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>Creator</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>81</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CcreationDate</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>122</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>NatonalName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>116</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>ZoneName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>101</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>RegeionName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>119</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>MarketName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>111</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>Email</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>66</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>BatchNo</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>87</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>DivisionCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>113</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>DivisionName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>116</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>OwnerEmpName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>138</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>Business_Type</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>125</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>MarketTeam</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>110</int>",
+              "      </value>",
+              "    </item>",
+              "  </ColumnWidths>",
+              "  <ColumnDisplayIndex>",
+              "    <item>",
+              "      <key>",
+              "        <string>NationalCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>0</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>ZoneCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>1</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>RegeionCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>2</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>MarketId</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>3</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>MarketCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>4</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>Market</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>5</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>EmployeeId</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>6</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>EmployeeCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>7</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>SAPEmpCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>8</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>FullName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>9</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>FatherName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>10</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>DesignationCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>11</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>JoiningDate</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>12</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>ConfirmedDate</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>13</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>MarketJoiningDate</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>14</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>PromotionDate</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>15</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CellPhone</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>16</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>BloodGroup</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>17</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>Sorting</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>18</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>SAPMarketCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>19</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>SAPDepotCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>20</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>Creator</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>21</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>CcreationDate</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>22</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>NatonalName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>23</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>ZoneName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>24</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>RegeionName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>25</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>MarketName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>26</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>Email</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>27</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>BatchNo</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>28</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>DivisionCode</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>29</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>DivisionName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>30</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>OwnerEmpName</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>31</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>Business_Type</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>32</int>",
+              "      </value>",
+              "    </item>",
+              "    <item>",
+              "      <key>",
+              "        <string>MarketTeam</string>",
+              "      </key>",
+              "      <value>",
+              "        <int>33</int>",
+              "      </value>",
+              "    </item>",
+              "  </ColumnDisplayIndex>",
+              "  <ColumnFrozen />",
+              "  <ColumnChecked>",
+              "    <item>",
+              "      <key>",
+              "        <string>MarketTeam</string>",
+              "      </key>",
+              "      <value>",
+              "        <boolean>true</boolean>",
+              "      </value>",
+              "    </item>",
+              "  </ColumnChecked>",
+              "  <ColumnFilter />",
+              "  <SelectionFilter />",
+              "  <FilterParameters />",
+              "  <IsSortDescending>false</IsSortDescending>",
+              "</TableWidgetGridSerialization>]]></AnnotationContent></Gemini>"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MasterCalendar",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[Date]",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeShortDatePattern\" />"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Year",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "YEAR([date])"
+          },
+          {
+            "type": "calculated",
+            "name": "Month",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "MONTH([date])",
+            "sortByColumn": "Month_Name",
+            "summarizeBy": "none"
+          },
+          {
+            "type": "calculated",
+            "name": "Day",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "DAY([Date])",
+            "summarizeBy": "none"
+          },
+          {
+            "type": "calculated",
+            "name": "Month_Name",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "FORMAT([Date],\"MMM\")"
+          },
+          {
+            "type": "calculated",
+            "name": "Day_Name",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "FORMAT([Date],\"DDD\")"
+          },
+          {
+            "type": "calculated",
+            "name": "Quarter",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "\"Q\"&FORMAT([Date],\"Q\")"
+          },
+          {
+            "type": "calculated",
+            "name": "week",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "FORMAT([Date],\"WW\")"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": "CALENDARAUTO()"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PBI_DOC",
+        "columns": [
+          {
+            "name": "BRAND_CODE",
+            "dataType": "string",
+            "sourceColumn": "BRAND_CODE",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "MarketCode",
+            "dataType": "string",
+            "sourceColumn": "MarketCode"
+          },
+          {
+            "name": "DoctorCode",
+            "dataType": "string",
+            "sourceColumn": "DoctorCode"
+          },
+          {
+            "name": "DoctorName",
+            "dataType": "string",
+            "sourceColumn": "DoctorName"
+          },
+          {
+            "name": "Speciality",
+            "dataType": "string",
+            "sourceColumn": "Speciality"
+          },
+          {
+            "type": "calculated",
+            "name": "Brand_Doctor",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "CONCATENATE(IF([BRAND_CODE] = \"\",\"xxx\",PBI_DOC[BRAND_CODE]),[DoctorCode])"
+          },
+          {
+            "type": "calculated",
+            "name": "Targeted Doc",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": [
+              "IF(PBI_DOC[BRAND_CODE] =\"\",  IF(",
+              "    PBI_DOC[DoctorCode] = LOOKUPVALUE(PBI_DCR_COMBINED_SRC_T[DoctorCode],PBI_DCR_COMBINED_SRC_T[DoctorCode], PBI_DOC[DoctorCode]),",
+              "    3,",
+              "    0",
+              "), IF(",
+              "    PBI_DOC[Brand_Doctor] = LOOKUPVALUE(PBI_DCR_COMBINED_SRC_T[Prod_Doctor],PBI_DCR_COMBINED_SRC_T[Prod_Doctor], PBI_DOC[Brand_Doctor]),",
+              "    1,",
+              "    2",
+              "))"
+            ],
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "PBI_DOC",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": "SELECT * FROM [dbo].[PBI_DOC]",
+              "dataSource": "SqlServer 192.168.8.239 HPL_PPM"
+            },
+            "annotations": [
+              {
+                "name": "QueryEditorSerialization",
+                "value": "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"QueryEditorSerialization\"><AnnotationContent><![CDATA[<RSQueryCommandText>SELECT * FROM [dbo].[PBI_DOC]</RSQueryCommandText><RSQueryCommandType>Text</RSQueryCommandType><RSQueryDesignState></RSQueryDesignState>]]></AnnotationContent></Gemini>"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": "SELECT * FROM [dbo].[PBI_DOC]"
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "PBI_DOC"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          },
+          {
+            "name": "QueryEditorSerialization",
+            "value": "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"QueryEditorSerialization\"><AnnotationContent><![CDATA[<RSQueryCommandText>SELECT * FROM [dbo].[PBI_DOC]</RSQueryCommandText><RSQueryCommandType>Text</RSQueryCommandType><RSQueryDesignState></RSQueryDesignState>]]></AnnotationContent></Gemini>"
+          }
+        ]
+      },
+      {
+        "name": "PBI_DCR_COMBINED_SRC_T",
+        "columns": [
+          {
+            "name": "PulseDcrId",
+            "dataType": "string",
+            "sourceColumn": "PulseDcrId",
+            "sourceProviderType": "Guid"
+          },
+          {
+            "name": "CallEntryByCode",
+            "dataType": "string",
+            "sourceColumn": "CallEntryByCode",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "CallEntryDate",
+            "dataType": "dateTime",
+            "sourceColumn": "CallEntryDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "CallShift",
+            "dataType": "string",
+            "sourceColumn": "CallShift",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "location",
+            "dataType": "string",
+            "sourceColumn": "location",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "DoctorCode",
+            "dataType": "string",
+            "sourceColumn": "DoctorCode",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Market_code",
+            "dataType": "string",
+            "sourceColumn": "Market_code",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "CallLocation",
+            "dataType": "string",
+            "sourceColumn": "CallLocation",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "VisitedWith",
+            "dataType": "string",
+            "sourceColumn": "VisitedWith",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "id2",
+            "dataType": "string",
+            "sourceColumn": "id2",
+            "sourceProviderType": "Guid"
+          },
+          {
+            "name": "creator",
+            "dataType": "string",
+            "sourceColumn": "creator",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "PromotedBrandName",
+            "dataType": "string",
+            "sourceColumn": "PromotedBrandName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "IstargetBrand",
+            "dataType": "boolean",
+            "sourceColumn": "IstargetBrand",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "name": "PPMType",
+            "dataType": "string",
+            "sourceColumn": "PPMType",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "MaterialCode",
+            "dataType": "string",
+            "sourceColumn": "MaterialCode",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "SharedQty",
+            "dataType": "int64",
+            "sourceColumn": "SharedQty",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "PEN",
+            "dataType": "string",
+            "sourceColumn": "PEN",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "PENQTY",
+            "dataType": "string",
+            "sourceColumn": "PENQTY",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "SA",
+            "dataType": "string",
+            "sourceColumn": "SA",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "SAQTY",
+            "dataType": "string",
+            "sourceColumn": "SAQTY",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "STATUS_DTL",
+            "dataType": "string",
+            "sourceColumn": "STATUS_DTL",
+            "sourceProviderType": "Char"
+          },
+          {
+            "type": "calculated",
+            "name": "Visit_Date",
+            "dataType": "dateTime",
+            "expression": "FORMAT([CallEntryDate],\"dd/MM/YYYY\")",
+            "formatString": "Short Date",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeShortDatePattern\" />"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Prod_Doctor",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "CONCATENATE(IF([PromotedBrandName] = \"\",\"xxx\",PBI_DCR_COMBINED_SRC_T[PromotedBrandName]),[DoctorCode])"
+          },
+          {
+            "type": "calculated",
+            "name": "Total_Target_Doc",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": [
+              "IF(PBI_DCR_COMBINED_SRC_T[PromotedBrandName] =\"\",  IF(",
+              "    PBI_DCR_COMBINED_SRC_T[DoctorCode] = LOOKUPVALUE(PBI_DOC[DoctorCode],PBI_DOC[DoctorCode],PBI_DCR_COMBINED_SRC_T[DoctorCode]),",
+              "    3,",
+              "    0",
+              "), IF(",
+              "    PBI_DCR_COMBINED_SRC_T[Prod_Doctor] = LOOKUPVALUE(PBI_DOC[Brand_Doctor], PBI_DOC[Brand_Doctor], PBI_DCR_COMBINED_SRC_T[Prod_Doctor]),",
+              "    1,",
+              "    2",
+              "))"
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "PBI_DCR_COMBINED_SRC_T",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[PBI_DCR_COMBINED_SRC_T].* FROM [dbo].[PBI_DCR_COMBINED_SRC_T] ",
+              "dataSource": "SqlServer 192.168.8.239 IrisNetSD_HPL 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[PBI_DCR_COMBINED_SRC_T].* FROM [dbo].[PBI_DCR_COMBINED_SRC_T] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "PBI_DCR_COMBINED_SRC_T"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "ProductCategory_t",
+        "columns": [
+          {
+            "name": "ProductCategoryName",
+            "dataType": "string",
+            "sourceColumn": "ProductCategoryName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "ProductNature",
+            "dataType": "string",
+            "sourceColumn": "ProductNature",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "BusinessNature",
+            "dataType": "string",
+            "sourceColumn": "BusinessNature",
+            "sourceProviderType": "Char"
+          },
+          {
+            "type": "calculated",
+            "name": "Business Type",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": [
+              "",
+              "SWITCH(",
+              "    ProductCategory_t[BusinessNature],",
+              "    \"B\", \"Solar\",",
+              "    \"C\", \"Credence\",",
+              "    \"G\", \"Rx\",",
+              "    \"L\", \"EliLilly\",",
+              "    \"N\", \"MSD\",",
+              "    \"V\", \"Saffron\",",
+              "    BLANK()",
+              ")"
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "ProductCategory_t",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[ProductCategory_t].* FROM [dbo].[ProductCategory_t] ",
+              "dataSource": "SqlServer 192.168.8.239 IrisNetSD_HPL"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[ProductCategory_t].* FROM [dbo].[ProductCategory_t] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "ProductCategory_t"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "PBI_Division_UserSecurity",
+        "columns": [
+          {
+            "name": "ForTheYear",
+            "dataType": "string",
+            "sourceColumn": "ForTheYear",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "DivisionCode",
+            "dataType": "string",
+            "sourceColumn": "DivisionCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "DivisionName",
+            "dataType": "string",
+            "sourceColumn": "DivisionName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "DivisionalHeadName",
+            "dataType": "string",
+            "sourceColumn": "DivisionalHeadName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "UserName",
+            "dataType": "string",
+            "sourceColumn": "UserName",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "PBI_Division_UserSecurity",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[PBI_Division_UserSecurity].* FROM [dbo].[PBI_Division_UserSecurity] ",
+              "dataSource": "SqlServer 192.168.8.239 IrisNetSD_HPL"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[PBI_Division_UserSecurity].* FROM [dbo].[PBI_Division_UserSecurity] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "PBI_Division_UserSecurity"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "PBI_Zone_User_T",
+        "columns": [
+          {
+            "name": "ZoneCode",
+            "dataType": "string",
+            "sourceColumn": "ZoneCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "ZoneName",
+            "dataType": "string",
+            "sourceColumn": "ZoneName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "EmployeeCode",
+            "dataType": "string",
+            "sourceColumn": "EmployeeCode",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "UserName",
+            "dataType": "string",
+            "sourceColumn": "UserName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Name",
+            "dataType": "string",
+            "sourceColumn": "Name",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "PBI_Zone_User_T",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[PBI_Zone_User_T].* FROM [dbo].[PBI_Zone_User_T] ",
+              "dataSource": "SqlServer 192.168.8.239 IrisNetSD_HPL"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[PBI_Zone_User_T].* FROM [dbo].[PBI_Zone_User_T] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "PBI_Zone_User_T"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "8bbe0310-fd5b-4fc9-921c-7a170ff9d786",
+        "fromTable": "PBI_DOC",
+        "fromColumn": "MarketCode",
+        "toTable": "PBI_Market_master_t",
+        "toColumn": "MarketCode"
+      },
+      {
+        "name": "768b6754-d21a-4a33-9d19-f5bb684c9414",
+        "fromTable": "PBI_DCR_COMBINED_SRC_T",
+        "fromColumn": "Visit_Date",
+        "toTable": "MasterCalendar",
+        "toColumn": "Date"
+      },
+      {
+        "name": "f1b57919-d433-407e-b2ad-39852457a819",
+        "fromTable": "PBI_DOC",
+        "fromColumn": "BRAND_CODE",
+        "toTable": "ProductCategory_t",
+        "toColumn": "ProductCategoryName"
+      },
+      {
+        "name": "df895644-6852-4307-a00f-5187644f2b52",
+        "fromTable": "PBI_DCR_COMBINED_SRC_T",
+        "fromColumn": "PromotedBrandName",
+        "toTable": "ProductCategory_t",
+        "toColumn": "ProductCategoryName"
+      },
+      {
+        "name": "9f670bdd-9c38-47f3-940d-aa32dd4fd8d7",
+        "fromTable": "PBI_DCR_COMBINED_SRC_T",
+        "fromColumn": "Market_code",
+        "toTable": "PBI_Market_master_t",
+        "toColumn": "MarketCode"
+      },
+      {
+        "name": "5bd87c99-5c1b-4a37-b3ae-82e32642fdd7",
+        "fromTable": "PBI_Market_master_t",
+        "fromColumn": "DivisionCode",
+        "toTable": "PBI_Division_UserSecurity",
+        "toColumn": "DivisionCode",
+        "crossFilteringBehavior": "bothDirections"
+      },
+      {
+        "name": "21091e6e-8d7c-4d0a-9c94-697b293a93f1",
+        "fromTable": "PBI_Market_master_t",
+        "fromColumn": "ZoneCode",
+        "toTable": "PBI_Zone_User_T",
+        "toColumn": "ZoneCode"
+      }
+    ],
+    "roles": [
+      {
+        "name": "faisal",
+        "modelPermission": "read",
+        "members": [
+          {
+            "memberName": "HPL\\faisalahmed",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1268"
+          }
+        ]
+      },
+      {
+        "name": "Reyasat",
+        "modelPermission": "read",
+        "members": [
+          {
+            "memberName": "HPL\\reyashat",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1224"
+          }
+        ]
+      },
+      {
+        "name": "Noor",
+        "modelPermission": "read",
+        "members": [
+          {
+            "memberName": "HPL\\noor",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1208"
+          }
+        ]
+      },
+      {
+        "name": "Atik",
+        "modelPermission": "read",
+        "members": [
+          {
+            "memberName": "HPL\\atik",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1217"
+          }
+        ]
+      },
+      {
+        "name": "Rezoan",
+        "modelPermission": "read",
+        "members": [
+          {
+            "memberName": "HPL\\rezoan",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1211"
+          }
+        ]
+      },
+      {
+        "name": "Aminul",
+        "modelPermission": "read",
+        "members": [
+          {
+            "memberName": "HPL\\aminul",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1137"
+          }
+        ]
+      },
+      {
+        "name": "Rashed",
+        "modelPermission": "read",
+        "members": [
+          {
+            "memberName": "HPL\\rashed.karim",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-10844"
+          }
+        ]
+      },
+      {
+        "name": "shahreer",
+        "modelPermission": "read",
+        "members": [
+          {
+            "memberName": "HPL\\shahreaar.ekram",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-9838"
+          }
+        ]
+      },
+      {
+        "name": "rahat",
+        "modelPermission": "read",
+        "members": [
+          {
+            "memberName": "HPL\\rahat",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1133"
+          }
+        ]
+      },
+      {
+        "name": "ZoneRoles",
+        "modelPermission": "read",
+        "members": [
+          {
+            "memberName": "HPL\\reza",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1159"
+          },
+          {
+            "memberName": "HPL\\aktarruzzaman",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1158"
+          },
+          {
+            "memberName": "HPL\\mohdzakaria",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1855"
+          },
+          {
+            "memberName": "HPL\\rezaul.hasan",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1304"
+          },
+          {
+            "memberName": "HPL\\salauddin.ansary",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1305"
+          },
+          {
+            "memberName": "HPL\\mizanur.rahman",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1695"
+          },
+          {
+            "memberName": "HPL\\zahid.anowar",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1696"
+          },
+          {
+            "memberName": "HPL\\rezaulkarim",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1157"
+          },
+          {
+            "memberName": "HPL\\mahbubur.rahman",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1303"
+          },
+          {
+            "memberName": "HPL\\mdkawser.sarker",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1885"
+          },
+          {
+            "memberName": "HPL\\shahinur.rahman",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1773"
+          },
+          {
+            "memberName": "HPL\\artezaur.rahman",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1685"
+          },
+          {
+            "memberName": "HPL\\atmrabiul.islam",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1849"
+          },
+          {
+            "memberName": "HPL\\mynul.islam",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1876"
+          },
+          {
+            "memberName": "HPL\\emdad",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1161"
+          },
+          {
+            "memberName": "HPL\\rafiqul.sarker",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1687"
+          },
+          {
+            "memberName": "HPL\\mdboarhan.uddin",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1912"
+          },
+          {
+            "memberName": "HPL\\kazidaud",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1163"
+          },
+          {
+            "memberName": "HPL\\mahmudul.islam",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1302"
+          },
+          {
+            "memberName": "HPL\\mdkhasru.miah",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1913"
+          },
+          {
+            "memberName": "HPL\\akm.hasanuzzaman",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1799"
+          },
+          {
+            "memberName": "HPL\\abdulquddus",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1147"
+          },
+          {
+            "memberName": "HPL\\raju.ahmed",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1842"
+          },
+          {
+            "memberName": "HPL\\smalauddin",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1168"
+          },
+          {
+            "memberName": "HPL\\mdbakul.akter",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1901"
+          },
+          {
+            "memberName": "HPL\\mozammel",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1165"
+          },
+          {
+            "memberName": "HPL\\shamsuddin",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1156"
+          },
+          {
+            "memberName": "HPL\\na.masud",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1709"
+          },
+          {
+            "memberName": "HPL\\ferdous.ali",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1697"
+          },
+          {
+            "memberName": "HPL\\syedataur.rahman",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1917"
+          },
+          {
+            "memberName": "HPL\\abu.nyum",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1703"
+          },
+          {
+            "memberName": "HPL\\Kamruzzaman",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1279"
+          },
+          {
+            "memberName": "HPL\\rabiul",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1776"
+          },
+          {
+            "memberName": "HPL\\alamgir.hossain",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1865"
+          },
+          {
+            "memberName": "HPL\\mdnazmul.hussain",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1891"
+          },
+          {
+            "memberName": "HPL\\arfanuddin",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1160"
+          },
+          {
+            "memberName": "HPL\\ajoy.chowdhury",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1928"
+          },
+          {
+            "memberName": "HPL\\harun.rashid",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1748"
+          },
+          {
+            "memberName": "HPL\\jahirul.jewel",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1710"
+          },
+          {
+            "memberName": "HPL\\ziauddin",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1164"
+          },
+          {
+            "memberName": "HPL\\rabiul.alam",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1686"
+          },
+          {
+            "memberName": "HPL\\debabrata.mandal",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1714"
+          },
+          {
+            "memberName": "HPL\\biswajit.roy",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1306"
+          },
+          {
+            "memberName": "HPL\\jamal.khan",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1739"
+          },
+          {
+            "memberName": "HPL\\mdmoklesur.rahman",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-2712"
+          },
+          {
+            "memberName": "HPL\\jalal.uddin",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1738"
+          },
+          {
+            "memberName": "HPL\\ibrahim.khan",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1691"
+          },
+          {
+            "memberName": "HPL\\mdmahfuzul.islam",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1815"
+          },
+          {
+            "memberName": "HPL\\rakibul.hasan",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-2735"
+          },
+          {
+            "memberName": "HPL\\mdhasibul.hasan",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1850"
+          },
+          {
+            "memberName": "HPL\\qasmanwar.hossain",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1853"
+          },
+          {
+            "memberName": "HPL\\humayun.kabir",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1753"
+          },
+          {
+            "memberName": "HPL\\atiur.rahman",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1713"
+          },
+          {
+            "memberName": "HPL\\ulfatul.alam",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1820"
+          },
+          {
+            "memberName": "HPL\\motiur.rahman",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1785"
+          }
+        ],
+        "tablePermissions": [
+          {
+            "name": "PBI_Zone_User_T",
+            "filterExpression": "PBI_Zone_User_T[UserName]=USERNAME()"
+          }
+        ]
+      },
+      {
+        "name": "HasanReza",
+        "modelPermission": "read",
+        "members": [
+          {
+            "memberName": "HPL\\khreza",
+            "memberId": "S-1-5-21-3888890667-3814149108-105243143-1223"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
